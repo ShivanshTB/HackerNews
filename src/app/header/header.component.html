@@ -1,0 +1,18 @@
+<header class="bg container mt-1 d-flex justify-content-between">
+    <nav class="d-flex align-items-center">
+      <h4 class="fw-bold fs-6 "><a class="text-decoration-none text-black" routerLink="/new">Hacker News</a></h4>
+      <p class="pt-1">
+        <a class="text-decoration-none text-black px-2" *ngIf="loginUser == true" routerLink="/welcome">Welcome |</a>
+        <a class="text-decoration-none text-black px-2" routerLink="/new">new</a>|
+        <a class="text-decoration-none text-black px-2" *ngIf="loginUser == true" routerLink="/threads">threads |</a>
+        <a class="text-decoration-none text-black px-2" routerLink="/past">past</a>|
+        <a class="text-decoration-none text-black px-2" routerLink="/comments">comments</a>|
+        <a class="text-decoration-none text-black px-2" routerLink="/ask">ask</a>|
+        <a class="text-decoration-none text-black px-2" routerLink="/show">show</a>|
+        <a class="text-decoration-none text-black px-2" routerLink="/jobs">jobs</a>|
+      </p>
+    </nav>
+    <a class="pt-1 text-decoration-none text-black px-2" *ngIf="loginUser!= true" routerLink="/login">login</a>
+    <button class="btn" *ngIf="loginUser== true" (click)="logout()">{{loginUserId}} logout</button>
+  </header>
+  

@@ -1,0 +1,20 @@
+<app-header></app-header>
+<section class="container bg-light">
+  <div class=" mt-2 pt-3">
+    <table>
+      <tbody *ngFor="let job of jobs; let i = index">
+        <tr>
+          <td>{{i+1}}. <a class="text-decoration-none text-black px-2" href="{{job.url}}" target="_blank">{{job.title}}</a></td>
+        </tr>
+        <tr class="ml-4">
+          <td class="text-muted">
+            <small>{{job.score}} point </small>|
+            <small> by {{job.by}}</small>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<app-footer></app-footer>
+  
