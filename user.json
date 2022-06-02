@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "username": "sharma_23",
+      "password": "qwerty123",
+      "id": 2
+    },
+    {
+      "username": "abhishek_09",
+      "password": "abhishek21",
+      "id": 3
+    },
+    {
+      "username": "jaskaran_76",
+      "password": "jassi_don",
+      "id": 4
+    },
+    {
+      "username": "don_09",
+      "password": "09876543",
+      "id": 5
+    },
+    {
+      "username": "wow_89",
+      "password": "shivansh_67",
+      "id": 6
+    }
+  ]
+}

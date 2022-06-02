@@ -1,0 +1,19 @@
+<app-header></app-header>
+<section class="container bg-light">
+  <div class=" mt-2 pt-3">
+    <table>
+      <tbody *ngFor="let new of news; let i = index">
+        <tr>
+          <td>{{i+1}}. <a class="text-decoration-none text-black px-2" href="{{new.url}}" target="_blank">{{new.title}}</a></td>
+            </tr>
+            <tr class="ml-4">
+                <td class="text-muted">
+                  <small>{{new.score}} point </small>|
+                  <small> by {{new.by}}</small>
+                </td>
+              </tr>
+         </tbody>
+      </table>
+    </div>
+</section>
+<app-footer></app-footer>
